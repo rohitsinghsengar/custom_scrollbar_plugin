@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Custom Scrollbar Plugin/Example</title>
+		<meta name="description" content="" />
+		<meta name="author" content="rohit.sengar" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<style type="text/css">
+			#example {
+				width: 500px;
+				height: 300px;
+				overflow: overflow;
+				padding: 0px;
+				margin: 0px;
+			}
+			#example1 {
+				width: 400px;
+				height: 200px;
+				overflow: overflow;
+				padding: 10px;
+				margin: 10px;
+				border: 1px solid green;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="jquery.scrollr.min.js"></script>
+		<script type="text/javascript">
+			window.onload = function() {
+				$('#example').scrollbar({
+					color : 'red',
+					rounded : false,
+					opacity : 0.7
+				});
+				$('#example1').scrollbar({
+					width : 20,
+					rounded : true,
+					opacity : 0.3
+				});
+			};
+		</script>
+	</head>
+
+	<body>
+		<div>
+			<header>
+				<h1>Custom Scrollbar Plugin/Example</h1>
+			</header>
+
+			<div id="example">
+				This is a demo page for scrollbar plugin developed by <a href="https://www.linkedin.com/in/rohitsengar" target="_blank">me :)</a><br />
+				<h3>Plugin Details</h3>
+				<ul>
+					<li>
+						Plugin name: Scrollr
+					</li>
+					<li>
+						Version: 0.9 beta
+					</li>
+					<li>
+						Complied version: <a href="jquery.scrollr.js" target="_blank">"jquery.scrollr.js"</a>
+					</li>
+					<li>
+						Readable version: <a href="jquery.scrollr.js" target="_blank">"jquery.scrollr.js"</a>
+					</li>
+					<li>
+						Dependencies: jquery 1.x.x only
+					</li>
+					<li>
+						Browsers support: All major browsers Firefox, chrome, opera, safari & IE (IE8 onwards)
+					</li>
+				</ul>
+				<h3>How to use</h3>
+				Very Simple, add jquery and scrollr plugin in head of the html file
+				<br />
+				<code>
+					&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"&gt;&lt;/script&gt;<br />
+					&lt;script src="jquery.scrollr.min.js"&gt;&lt;/script&gt;
+				</code>
+				<p>Initialize plugin on window load or any other event(as per requirement). You can also set couple of options(will increase in future) provided.</p>
+<pre>
+window.onload = function() {
+	$('#example').scrollbar({
+		color : 'red', // color of you choice, black by default
+		rounded : false, // if you want to use rounded corners for scrollbar, true by default
+		opacity : 0.7 //opacity of scrollbar
+	});
+	$('#example1').scrollbar({
+		width : 20,
+		rounded : true,
+		opacity : 0.3
+	});
+};
+</pre>
+				That's it, enjoy scrolling! you can add this scrollbar to multiple divs in one page<br />
+				<h3>Known issues and future scope</h3>
+				<ul>
+					<li>Problems in nested scrollbar</li>
+					<li>Scrollbar positioning bug when element has padding.</li>
+					<li>Problems with scrollbar fadein/out while dragging.</li>
+					<li>Touch devices not supported //todo</li>
+				</ul>
+				
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec dictum arcu. Maecenas sit amet elit a mauris dapibus pharetra at in ante. Suspendisse potenti. Cras egestas mi quis mi cursus, in pretium sem interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus ut vehicula libero. Mauris non feugiat dui, blandit ultricies elit.
+
+				Duis eget orci lectus. Pellentesque tortor magna, consectetur at erat non, faucibus rhoncus dolor. Nam quis enim quis erat elementum cursus. Sed adipiscing mollis odio vel laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Curabitur consequat posuere magna, et cursus turpis cursus nec. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus feugiat tellus ut purus adipiscing, in ultrices elit lacinia. Praesent tellus nisl, tempor quis metus non, ultricies blandit ante. Ut in sapien bibendum diam aliquet porta a at magna. Nulla urna nunc, fermentum vitae aliquet ut, mattis eu felis. Etiam ac lectus non lacus fringilla varius.
+
+				Aliquam sollicitudin felis feugiat dapibus pulvinar. Vivamus ut adipiscing elit, ac ultricies quam. Nulla ullamcorper porta tincidunt. Donec non tincidunt erat. Vestibulum placerat sapien in enim bibendum mattis. Curabitur vitae gravida augue. Sed in elementum erat. Curabitur quis eros at nulla placerat viverra. Vivamus non elementum nulla. Etiam in malesuada libero. Maecenas non faucibus purus.
+
+				Ut condimentum enim ut dictum viverra. Sed tellus erat, ornare et auctor fermentum, laoreet nec lacus. Vivamus laoreet urna ante, sit amet elementum risus aliquam vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consequat purus mi, id porttitor elit auctor malesuada. Phasellus varius, nibh a gravida congue, arcu ipsum varius metus, sit amet malesuada neque nulla nec turpis. Nunc consequat ante ut faucibus facilisis. Ut molestie laoreet nisl, sit amet adipiscing metus molestie sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec commodo nibh. Mauris vel nisl eu quam fringilla viverra elementum nec eros.
+				Phasellus sem neque, tempor vitae est iaculis, elementum luctus mauris. Donec gravida, enim vel dignissim iaculis, mauris felis semper mauris, dictum facilisis orci justo sit amet metus. Nulla faucibus porta odio nec accumsan. Vivamus velit eros, vulputate vel felis ac, aliquet rutrum urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id metus mollis, volutpat mauris sit amet, convallis ligula. Sed sed risus tincidunt purus dapibus dignissim. Nullam vel nisi eget justo viverra laoreet. Sed sed lorem ultricies, dignissim quam eget, eleifend nisl. Etiam sed est sapien.
+
+				Quisque in fringilla diam. Curabitur facilisis ipsum lacus, sed ultricies quam mollis sit amet. Vestibulum rutrum elementum sagittis. Suspendisse convallis tortor quis purus gravida, vel adipiscing diam congue. Etiam ultrices tortor scelerisque massa facilisis, ac venenatis tortor auctor. Suspendisse potenti. Nunc nec felis lorem. Aliquam in lectus in odio tempus interdum. Proin suscipit ultrices nulla, id sagittis diam tempus non.
+
+				Cras sit amet nisi ligula. Duis tempor nibh eu gravida fringilla. Maecenas gravida, est tincidunt tempus ultricies, nulla arcu pulvinar elit, ut hendrerit felis est nec orci. Proin est augue, tristique ac nunc ac, aliquam dignissim magna. Ut tincidunt dui dignissim nibh cursus scelerisque. Donec a velit dolor. Vivamus mauris arcu, vestibulum eget felis ac, consequat euismod lorem. Maecenas nec tempus diam, sagittis adipiscing urna. Curabitur ligula diam, pellentesque ut ultricies mattis, consequat non felis. Sed id interdum lacus. Nulla facilisi.
+
+				Sed ac mi vitae magna blandit dapibus eu aliquet eros. Aenean feugiat euismod elit, vel semper mauris lacinia nec. Curabitur dapibus viverra arcu eget sagittis. Fusce non lacus fermentum, consequat purus vitae, elementum orci. Donec lobortis, libero pulvinar venenatis lacinia, ligula massa tempus sapien, sit amet viverra tellus magna id velit. Aliquam iaculis porta dui eu ullamcorper. In euismod purus sit amet ligula semper hendrerit ac a leo. Aliquam tempus ultrices luctus. Pellentesque nec dolor vel erat imperdiet consectetur. Vivamus ac tempus dui. Sed dignissim id risus eu euismod. Vestibulum scelerisque imperdiet consectetur. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean ac interdum est, in accumsan sapien.
+
+				Etiam venenatis at velit vel iaculis. Donec feugiat, quam pretium tempus mollis, orci orci viverra eros, in bibendum augue urna quis risus. Nulla facilisi. Proin tincidunt ullamcorper quam sed tempus. Integer a ante nunc. Nullam lacus elit, imperdiet nec tellus id, ultrices porttitor quam. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eu ultricies orci, eget auctor lectus. Cras vehicula molestie est, eget vehicula libero aliquet vitae.
+
+				Sed id turpis fermentum, placerat metus vitae, mattis urna. Nulla semper scelerisque elit. Aliquam vulputate eros vitae condimentum faucibus. Maecenas vitae ipsum ut purus consequat facilisis quis rutrum dui. Donec ultrices placerat ante sit amet posuere. Nulla malesuada risus justo, ut convallis leo ultrices cursus. Donec tempus lectus a sapien aliquam commodo. Morbi tristique vitae lorem ut egestas. Phasellus ultricies, leo semper condimentum fermentum, mi elit placerat mauris, sit amet dictum elit dolor id ipsum. Mauris felis magna, lobortis in tellus id, pellentesque dignissim velit. Donec quis elit euismod nisi lobortis lobortis quis ut leo. Sed et risus a nibh volutpat eleifend vitae vel augue.
+			</div>
+			<div id="example1">
+				Phasellus sem neque, tempor vitae est iaculis, elementum luctus mauris. Donec gravida, enim vel dignissim iaculis, mauris felis semper mauris, dictum facilisis orci justo sit amet metus. Nulla faucibus porta odio nec accumsan. Vivamus velit eros, vulputate vel felis ac, aliquet rutrum urna. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id metus mollis, volutpat mauris sit amet, convallis ligula. Sed sed risus tincidunt purus dapibus dignissim. Nullam vel nisi eget justo viverra laoreet. Sed sed lorem ultricies, dignissim quam eget, eleifend nisl. Etiam sed est sapien.
+
+				Quisque in fringilla diam. Curabitur facilisis ipsum lacus, sed ultricies quam mollis sit amet. Vestibulum rutrum elementum sagittis. Suspendisse convallis tortor quis purus gravida, vel adipiscing diam congue. Etiam ultrices tortor scelerisque massa facilisis, ac venenatis tortor auctor. Suspendisse potenti. Nunc nec felis lorem. Aliquam in lectus in odio tempus interdum. Proin suscipit ultrices nulla, id sagittis diam tempus non.
+
+				Cras sit amet nisi ligula. Duis tempor nibh eu gravida fringilla. Maecenas gravida, est tincidunt tempus ultricies, nulla arcu pulvinar elit, ut hendrerit felis est nec orci. Proin est augue, tristique ac nunc ac, aliquam dignissim magna. Ut tincidunt dui dignissim nibh cursus scelerisque. Donec a velit dolor. Vivamus mauris arcu, vestibulum eget felis ac, consequat euismod lorem. Maecenas nec tempus diam, sagittis adipiscing urna. Curabitur ligula diam, pellentesque ut ultricies mattis, consequat non felis. Sed id interdum lacus. Nulla facilisi.
+			</div>
+			<footer>
+				<p>
+					&copy; Copyright by <a href="https://www.linkedin.com/in/rohitsengar" target="_blank">Rohit Sengar</a> This is the example built as demo page for my scrollbar plugin.
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
